@@ -1,18 +1,20 @@
 = issuecloser
 
-Description
+##Description
 
 Manual and automatic management of issues statuses
 
-To install:
+##To install:
 
-1. Go to app folder and run:
+Go to app folder and run:
 $ cd plugins && mkdir issuecloser && cd ..
 
-2. Copy plugin files to folder /plugins/issuecloser
+Copy plugin files to folder /plugins/issuecloser
 Do not change folder path!
 
-3. Go to app folder and run:
+Go to app folder and run:
 $ bundle check || bundle install
 $ bundle exec rake issuecloser:install
 
+##License
+MIT License. Copyright 2016-2017 isheninp@gmail.com
