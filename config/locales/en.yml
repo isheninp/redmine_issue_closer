@@ -1,0 +1,16 @@
+en:
+  settings_h1: Issue management
+  setting_auto_close: Automatic issue closing
+  setting_issues_status_from: Find status
+  setting_issues_status_to: Set status to
+  setting_auto_close_after_days: Wait before change status, days
+  settings_manual_change: Manually change
+  make_new_status: Change status
+  action: Action
+  project: Project
+  subject: Subject
+  issue_date: Date
+  status_from: Current status
+  status_to: New status
+  issues_count: Total issues
+  issues_to_be_changed: Issues to be changed
