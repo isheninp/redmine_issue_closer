@@ -24,6 +24,9 @@ $ bundle check || bundle install
 	
 $RAILS_ENV=production bundle exec rake issuecloser:install
 ```
+
+(*) Wait before change status - days sinse issue was UPDATED!
+
 ### License
 MIT License. Copyright 2016-2017 isheninp@gmail.com
 
