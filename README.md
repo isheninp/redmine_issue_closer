@@ -8,7 +8,10 @@ Manual and automatic management of issues statuses
 
 Go to app folder and run:
 
+
+```ruby
 $ cd plugins && mkdir issuecloser && cd ..
+```
 
 Copy plugin files to folder /plugins/issuecloser
 
