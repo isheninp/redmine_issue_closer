@@ -22,7 +22,7 @@ Go to app folder and run:
 ```ruby
 $ bundle check || bundle install
 	
-$ bundle exec rake issuecloser:install
+$RAILS_ENV=production bundle exec rake issuecloser:install
 ```
 ### License
 MIT License. Copyright 2016-2017 isheninp@gmail.com
