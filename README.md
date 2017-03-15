@@ -26,9 +26,9 @@ $RAILS_ENV=production bundle exec rake issuecloser:install
 ```
 
 ### Settings:
-Automatic issue closing - to enable closing automatically
+Automatic issue closing - to enable issue statuses updating automatically every day
 
-Find status - find issue to be changed with this status, for example "solved"
+Find status - find issue to be changed, for example "solved"
 
 Set status to  - update issues with new status, for example "closed"
 
