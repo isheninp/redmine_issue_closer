@@ -24,3 +24,6 @@ $ bundle exec rake issuecloser:install
 ```
 ### License
 MIT License. Copyright 2016-2017 isheninp@gmail.com
+
+![C](http://www.google-analytics.com/collect?v=1&t=pageview&tid=UA-93741657-1)
+
