@@ -32,7 +32,7 @@ Find status - find issue to be changed, for example "solved"
 
 Set status to  - update issues with new status, for example "closed"
 
-Wait before change status, days -  days sinse issue was UPDATED!
+Wait before change status, days -  days since issue was UPDATED!
 
 ### License
 MIT License. Copyright 2016-2017 isheninp@gmail.com
