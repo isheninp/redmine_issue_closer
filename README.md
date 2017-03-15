@@ -1,4 +1,4 @@
-## Redmine issue closer
+## Redmine issue closing
 
 ### Description
 
