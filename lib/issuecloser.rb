@@ -8,7 +8,7 @@ module Issuecloser
     puts 'Setting up schedule..'
     system 'wheneverize .' until File.exist?('config/schedule.rb')
     unless File.foreach('config/schedule.rb').grep(/issuecloser:close_tasks/).any?
-      print 'Writing schedile config..'
+      print 'Writing schedule config..'
       plugin_config = File.read("plugins/issuecloser/config/schedule.rb")
       File.open("config/schedule.rb", "a") do |config_file|
         config_file.puts plugin_config
