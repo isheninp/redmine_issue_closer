@@ -5,13 +5,13 @@
 		<%= check_box_tag('settings[auto_close]', true, @settings[:auto_close]) %>
 	</p>
 	<p>
-		<% statuses = IssueStatus.where('is_closed=false').map { |s| [s.name, s.id] } %>
+		<% statuses = IssueStatus.where('is_closed=?', false).map { |s| [s.name, s.id] } %>
 		<%= setting_label(:issues_status_from) %>
 		<%= select_tag('settings[issues_status_from]',
 		options_for_select(statuses, @settings[:issues_status_from])) %>
 	</p>
 	<p>
-		<% statuses = IssueStatus.where('is_closed=true').map { |s| [s.name, s.id] } %>
+		<% statuses = IssueStatus.where('is_closed=?', true).map { |s| [s.name, s.id] } %>
 		<%= setting_label(:issues_status_to) %>
 		<%= select_tag('settings[issues_status_to]',
 		options_for_select(statuses, @settings[:issues_status_to])) %>
@@ -25,3 +25,4 @@
 		<a href=/issuecloser><%= t :settings_manual_change %></a>
 	</p>
 </div>
+
