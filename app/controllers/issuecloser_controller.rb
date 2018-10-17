@@ -2,9 +2,6 @@ class IssuecloserController < AdminController
   unloadable
 
   def index
-    if params.has_key?(:id) && params[:issue_action] == 'change' && (Issue.find(params[:id]).status_id.to_s == Setting.plugin_issuecloser['issues_status_from'])
-      Issue.find(params[:id]).update(status_id: Setting.plugin_issuecloser['issues_status_to'])
-    end
     @issues_all_count = Issue.count
     @issues_to_change = Issue.where('status_id=?', Setting.plugin_issuecloser['issues_status_from']).where("updated_on < ?", Setting.plugin_issuecloser['auto_close_after_days'].to_i.days.ago).order(:created_on)
     @issues_to_change_count = @issues_to_change.count
@@ -12,4 +9,14 @@ class IssuecloserController < AdminController
     @status_to = IssueStatus.find(Setting.plugin_issuecloser['issues_status_to'])
   end
 
+  def update
+    if params[:id]
+      @issue = Issue.find(params[:id])
+      if @issue.status_id == Setting.plugin_issuecloser['issues_status_from'].to_i
+        @issue.update(status_id: Setting.plugin_issuecloser['issues_status_to'])
+        flash[:notice] = l(:notice_issue_status_updated)
+      end
+    end
+    redirect_to :issuecloser
+  end
 end

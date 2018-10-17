@@ -11,6 +11,7 @@ fr:
   status_to: Futur statut
   issues_count: Nombre de demandes
   issues_to_be_changed: Demandes à modifier
+  notice_issue_status_updated: La demande a été mise à jour
   helpers:
     page_entries_info:
       more_pages:

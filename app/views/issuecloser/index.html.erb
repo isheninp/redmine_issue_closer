@@ -25,7 +25,7 @@
       <td><%= link_to_issue issue %></td>
       <td><%= issue.status %></td>
       <td><%= @status_to %></td>
-      <td><a href=?id=<%= issue.id %>&issue_action=change><%= t 'make_new_status' %></a></td>
+      <td><%= link_to t('make_new_status'), issuecloser_update_path(id: issue.id) %></td>
     </tr>
   <% end %>
   </tbody>
