@@ -1,0 +1,32 @@
+fr:
+  settings_h1: Gestion des demandes
+  setting_auto_close: Automatiser les changements de statut
+  setting_issues_status_from: Statut de départ
+  setting_issues_status_to: Statut d'arrivée
+  setting_auto_close_after_days: Délai avant changement de statut (en jours)
+  settings_manual_change: Lancer manuellement le script
+  make_new_status: Modifier le statut
+  action: Action
+  project: Projet
+  subject: Sujet
+  issue_date: Date
+  status_from: Statut actuel
+  status_to: Nouveau statut
+  issues_count: Nombre de demandes
+  issues_to_be_changed: Demandes à modifier
+  helpers:
+    page_entries_info:
+      more_pages:
+        display_entries: "%{entry_name} <b>%{first}</b> à <b>%{last}</b> affiché(e)s sur <b>%{total}</b> au total"
+      one_page:
+        display_entries:
+          zero: "Aucun(e) %{entry_name} trouvé(e)s"
+          one: "Affichage de <b>1</b> %{entry_name}"
+          other: "Affichage des <b>%{count}</b> %{entry_name}"
+  views:
+    pagination:
+      first: "&laquo; Première"
+      last: "Dernière &raquo;"
+      previous: "&lsaquo; Précédente"
+      next: "Suivante &rsaquo;"
+      truncate: "&hellip;"
