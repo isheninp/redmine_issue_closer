@@ -7,9 +7,6 @@ ru:
   settings_manual_change: Поиск и ручное изменение статуса
   make_new_status: Сменить статус
   action: Действие
-  project: Проект
-  subject: Тема
-  issue_date: Дата
   status_from: Текущий статус
   status_to: Новый статус
   issues_count: Задач всего

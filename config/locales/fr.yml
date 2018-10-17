@@ -1,5 +1,5 @@
 fr:
-  settings_h1: Gestion des demandes
+  settings_h1: Fermeture automatique des demandes
   setting_auto_close: Automatiser les changements de statut
   setting_issues_status_from: Statut de départ
   setting_issues_status_to: Statut d'arrivée
@@ -7,11 +7,8 @@ fr:
   settings_manual_change: Lancer manuellement le script
   make_new_status: Modifier le statut
   action: Action
-  project: Projet
-  subject: Sujet
-  issue_date: Date
   status_from: Statut actuel
-  status_to: Nouveau statut
+  status_to: Futur statut
   issues_count: Nombre de demandes
   issues_to_be_changed: Demandes à modifier
   helpers:

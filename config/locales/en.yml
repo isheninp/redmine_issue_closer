@@ -7,9 +7,6 @@ en:
   settings_manual_change: Manually change
   make_new_status: Change status
   action: Action
-  project: Project
-  subject: Subject
-  issue_date: Date
   status_from: Current status
   status_to: New status
   issues_count: Issues total
