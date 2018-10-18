@@ -1,3 +1,5 @@
+require_dependency 'redmine_issue_closer/hooks'
+
 Redmine::Plugin.register :issuecloser do
   name 'Issuecloser plugin'
   author 'Pavel Ishenin'
@@ -10,4 +12,11 @@ Redmine::Plugin.register :issuecloser do
                :auto_close => false,
                :auto_close_after_days => 30,
            }
+end
+
+Redmine::MenuManager.map :admin_menu do |menu|
+  menu.push :issuecloser, {:controller => 'issuecloser'},
+            :after => :plugins,
+            :caption => :label_issue_closer,
+            :html => {:class => 'icon'}
 end
