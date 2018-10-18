@@ -11,6 +11,9 @@ en:
   status_to: New status
   issues_count: Issues total
   issues_to_be_changed: Issues to be changed
+  notice_issue_status_updated: The issue has been updated
+  setting_closing_note: Note added to the issue when the status is updated
+  update_settings: Update plugin settings
   helpers:
     page_entries_info:
       more_pages:
