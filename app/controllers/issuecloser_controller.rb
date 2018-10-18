@@ -1,6 +1,10 @@
 class IssuecloserController < AdminController
   unloadable
 
+  before_filter :require_admin
+
+  layout 'admin'
+
   def index
     @issues_all_count = Issue.count
     @issues_to_change = Issue.where('status_id=?', Setting.plugin_issuecloser['issues_status_from']).where("updated_on < ?", Setting.plugin_issuecloser['auto_close_after_days'].to_i.days.ago).order(:created_on)
