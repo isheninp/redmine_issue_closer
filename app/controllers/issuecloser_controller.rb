@@ -17,14 +17,9 @@ class IssuecloserController < AdminController
     if params[:id]
       @issue = Issue.find(params[:id])
       if @issue.status_id == Setting.plugin_issuecloser['issues_status_from'].to_i
-
-        note = Setting.plugin_issuecloser['closing_note']
-        @issue.init_journal(User.current, note) if note.present?
-
-        new_status = IssueStatus.find(Setting.plugin_issuecloser['issues_status_to'])
-        @issue.safe_attributes = {"status_id"=>"#{new_status.id}"}
-
-        if @issue.save
+        if @issue.close(note: Setting.plugin_issuecloser['closing_note'],
+                        user: User.current,
+                        new_status_id: Setting.plugin_issuecloser['issues_status_to'])
           flash[:notice] = l(:notice_issue_status_updated)
         else
           flash[:error] = l(:error_issue_status_not_updated)

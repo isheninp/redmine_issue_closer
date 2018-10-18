@@ -1,5 +1,9 @@
 require_dependency 'redmine_issue_closer/hooks'
 
+ActionDispatch::Callbacks.to_prepare do
+  require_dependency 'redmine_issue_closer/issue_patch'
+end
+
 Redmine::Plugin.register :issuecloser do
   name 'Issuecloser plugin'
   author 'Pavel Ishenin'
