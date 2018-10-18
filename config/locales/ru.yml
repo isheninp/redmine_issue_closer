@@ -1,5 +1,5 @@
 ru:
-  settings_h1: Управление статусами задач
+  label_issue_closer: Управление статусами задач
   setting_auto_close: Автоматическое закрытие задач
   setting_issues_status_from: Искать задачи со статусом
   setting_issues_status_to: Установить статус

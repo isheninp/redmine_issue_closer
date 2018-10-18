@@ -1,5 +1,5 @@
 fr:
-  settings_h1: Fermeture automatique des demandes
+  label_issue_closer: Fermeture automatique des demandes
   setting_auto_close: Automatiser les changements de statut
   setting_issues_status_from: Statut de départ
   setting_issues_status_to: Statut d'arrivée
@@ -12,6 +12,8 @@ fr:
   issues_count: Nombre de demandes
   issues_to_be_changed: Demandes à modifier
   notice_issue_status_updated: La demande a été mise à jour
+  setting_closing_note: Note ajoutée à la demande lors du changement de statut
+  update_settings: Modifier les paramètres du plugin
   helpers:
     page_entries_info:
       more_pages:

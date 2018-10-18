@@ -1,5 +1,5 @@
 en:
-  settings_h1: Issue management
+  label_issue_closer: Issue management
   setting_auto_close: Automatic issue closing
   setting_issues_status_from: Find status
   setting_issues_status_to: Set status to

@@ -1,4 +1,8 @@
-<h2><%= t :settings_h1 %></h2>
+<div class=contextual>
+  <%= link_to l(:update_settings), plugin_settings_path('issuecloser') %>
+</div>
+
+<h2><%= t :label_issue_closer %></h2>
 
 <p>
   <%= t 'issues_count' %>: <%= @issues_all_count %>
