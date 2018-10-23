@@ -14,6 +14,7 @@ fr:
   notice_issue_status_updated: La demande a été mise à jour
   setting_closing_note: Note ajoutée à la demande lors du changement de statut
   update_settings: Modifier les paramètres du plugin
+  setting_update_author: Auteur des modifications automatiques
   helpers:
     page_entries_info:
       more_pages:

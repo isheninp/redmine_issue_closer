@@ -24,6 +24,10 @@
     <%= setting_label(:closing_note) %>
     <%= text_area_tag 'settings[closing_note]', @settings['closing_note'] %>
   </p>
+  <p>
+    <%= setting_label(:update_author) %>
+    <%= select_tag('settings[update_author]', principals_options_for_select(Principal.active.sorted, @settings['update_author'])) %>
+  </p>
   <hr>
   <p>
     <%= link_to t(:settings_manual_change), issuecloser_path %>
