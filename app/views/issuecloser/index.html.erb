@@ -34,5 +34,5 @@
   <% end %>
   </tbody>
 </table>
-<%= paginate @issues_to_change_paginated %>
+<span class="pagination"><%= pagination_links_full @issues_to_change_pages, @issues_to_change_count %></span>
 

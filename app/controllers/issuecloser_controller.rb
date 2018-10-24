@@ -13,7 +13,10 @@ class IssuecloserController < AdminController
                               where("updated_on < ?", Setting.plugin_issuecloser['auto_close_after_days'].to_i.days.ago).
                               order(updated_on: :asc)
     @issues_to_change_count = @issues_to_change.count
-    @issues_to_change_paginated = @issues_to_change.includes(:project, :tracker, :priority, :status).page params[:page]
+    @issues_to_change_pages = Paginator.new @issues_to_change_count, per_page_option, params[:page]
+    @issues_to_change_paginated = @issues_to_change.includes(:project, :tracker, :priority, :status)
+                                      .limit(@issues_to_change_pages.per_page)
+                                      .offset(@issues_to_change_pages.offset)
     @status_to = IssueStatus.find(Setting.plugin_issuecloser['issues_status_to'])
   end
 

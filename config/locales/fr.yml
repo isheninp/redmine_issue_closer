@@ -4,7 +4,7 @@ fr:
   setting_issues_status_from: Statut de départ
   setting_issues_status_to: Statut d'arrivée
   setting_auto_close_after_days: Délai avant changement de statut (en jours)
-  settings_manual_change: Lancer manuellement le script
+  settings_manual_change: Voir les demandes à clôturer
   make_new_status: Modifier le statut
   action: Action
   status_from: Statut actuel
