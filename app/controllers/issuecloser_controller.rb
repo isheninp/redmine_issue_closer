@@ -3,6 +3,8 @@ class IssuecloserController < AdminController
 
   before_filter :require_admin
 
+  before_action :set_settings_for_test if Rails.env.test?
+
   layout 'admin'
 
   def index
@@ -28,4 +30,14 @@ class IssuecloserController < AdminController
     end
     redirect_to :issuecloser
   end
+
+  private
+
+  def set_settings_for_test
+    Setting.plugin_issuecloser['issues_status_from'] = 1 # Resolved
+    Setting.plugin_issuecloser['issues_status_to'] = 5 # Closed
+    Setting.plugin_issuecloser['closing_note'] = "Closing the issue due to inactivity"
+    Setting.plugin_issuecloser['update_author'] = 1
+  end
+
 end

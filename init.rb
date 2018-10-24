@@ -11,6 +11,7 @@ Redmine::Plugin.register :issuecloser do
   version '0.0.1'
   url 'https://github.com/isheninp/redmine_issue_closer'
   author_url 'https://github.com/isheninp'
+  # requires_redmine_plugin :redmine_base_rspec, :version_or_higher => '0.0.4' if Rails.env.test?
   settings :partial => 'settings/issuecloser',
            :default => {
                :auto_close => false,
