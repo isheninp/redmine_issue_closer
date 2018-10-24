@@ -22,7 +22,11 @@ describe IssuecloserController, :type => :controller do
       get :index
       expect(Setting.plugin_issuecloser['issues_status_to']).to eq 5
       expect(response).to be_success
-      expect(response.body).to include("<h2>#{I18n.t :label_issue_closer}</h2>")
+      expect(response.body).to match /<h2>#{ I18n.t :label_issue_closer }<\/h2>/im
+      expect(assigns(:issues_to_change)).to_not be_empty
+      assigns(:issues_to_change).each do |issue|
+        expect(Setting.plugin_issuecloser['issues_status_from']).to include issue.status_id
+      end
     end
 
   end

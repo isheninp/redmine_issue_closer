@@ -8,7 +8,7 @@
     <% statuses = IssueStatus.where('is_closed=?', false).map {|s| [s.name, s.id]} %>
     <%= setting_label(:issues_status_from) %>
     <%= select_tag('settings[issues_status_from]',
-                   options_for_select(statuses, @settings['issues_status_from'])) %>
+                   options_for_select(statuses, @settings['issues_status_from']), multiple: true) %>
   </p>
   <p>
     <% statuses = IssueStatus.where('is_closed=?', true).map {|s| [s.name, s.id]} %>
