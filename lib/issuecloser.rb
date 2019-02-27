@@ -27,7 +27,6 @@ module Issuecloser
       issues_to_change = Issue.where(status_id: Setting.plugin_issuecloser['issues_status_from'])
                              .where("updated_on < ?", Setting.plugin_issuecloser['auto_close_after_days'].to_i.days.ago)
                              .order(updated_on: :asc)
-                             .limit(1)
       issues_to_change.each do |issue|
         if issue.close(new_status_id: new_status_id,
                        user: update_author,
