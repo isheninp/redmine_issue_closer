@@ -21,7 +21,7 @@ describe IssuecloserController, :type => :controller do
     it "should get main index page with issues to close" do
       get :index
       expect(Setting.plugin_issuecloser['issues_status_to']).to eq 5
-      expect(response).to be_success
+      expect(response).to be_successful
       expect(response.body).to match /<h2>#{ I18n.t :label_issue_closer }<\/h2>/im
       expect(assigns(:issues_to_change)).to_not be_empty
       assigns(:issues_to_change).each do |issue|

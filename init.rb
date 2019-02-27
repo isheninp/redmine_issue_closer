@@ -1,6 +1,6 @@
 require_dependency 'redmine_issue_closer/hooks'
 
-ActionDispatch::Callbacks.to_prepare do
+ActiveSupport::Reloader.to_prepare do
   require_dependency 'redmine_issue_closer/issue_patch'
 end
 

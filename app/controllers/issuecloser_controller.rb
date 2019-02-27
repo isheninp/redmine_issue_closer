@@ -1,7 +1,7 @@
 class IssuecloserController < AdminController
   unloadable
 
-  before_filter :require_admin
+  before_action :require_admin
 
   before_action :set_settings_for_test if Rails.env.test?
 
