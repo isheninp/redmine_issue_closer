@@ -1,6 +1,7 @@
 ru:
   label_issue_closer: Управление статусами задач
   setting_auto_close: Автоматическое закрытие задач
+  setting_project_name: Выбирать проекты (CTRL+)
   setting_issues_status_from: Искать задачи со статусом
   setting_issues_status_to: Установить статус
   setting_auto_close_after_days: Менять статус, если прошло дней
@@ -10,14 +11,16 @@ ru:
   status_from: Текущий статус
   status_to: Новый статус
   issues_count: Задач всего
-  issues_to_be_changed: Найдено задач для изменения  
+  issues_to_be_changed: Найдено задач для изменения
+  setting_closing_note: Пометка при удалении
+  setting_update_author: Автор изменений
   helpers:
     page_entries_info:
       more_pages:
         display_entries: Показана %{entry_name} <b>%{first}&nbsp;-&nbsp;%{last}</b> из <b>%{total}</b>
       one_page:
         display_entries:
-          zero: %{entry_name.capitalize} не найдено
+          zero: "%{entry_name.capitalize} не найдено"
           one: Показано <b>%{count}</b> %{entry_name}
           other: Показаны <b>все %{count}</b> %{entry_name}"
   views:
