@@ -26,6 +26,7 @@ module Issuecloser
       closing_note = Setting.plugin_issuecloser['closing_note']
       issues_to_change = Issue.where(status_id: Setting.plugin_issuecloser['issues_status_from'])
                              .where("updated_on < ?", Setting.plugin_issuecloser['auto_close_after_days'].to_i.days.ago)
+                             .where(project_id: Setting.plugin_issuecloser['projects']).
                              .order(updated_on: :asc)
       issues_to_change.each do |issue|
         if issue.close(new_status_id: new_status_id,

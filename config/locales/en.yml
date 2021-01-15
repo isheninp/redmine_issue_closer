@@ -1,6 +1,7 @@
 en:
   label_issue_closer: Issue management
   setting_auto_close: Automatic issue closing
+  setting_project_name: Select projects (CTRL+)
   setting_issues_status_from: Find status
   setting_issues_status_to: Set status to
   setting_auto_close_after_days: Wait before change status, days

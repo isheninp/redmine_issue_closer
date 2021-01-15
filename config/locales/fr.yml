@@ -1,6 +1,7 @@
 fr:
   label_issue_closer: Fermeture automatique des demandes
   setting_auto_close: Automatiser les changements de statut
+  setting_project_name: Select projects (CTRL+)
   setting_issues_status_from: Statut de départ
   setting_issues_status_to: Statut d'arrivée
   setting_auto_close_after_days: Délai avant changement de statut (en jours)

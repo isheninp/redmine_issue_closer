@@ -5,6 +5,12 @@
     <%= check_box_tag('settings[auto_close]', true, @settings['auto_close']) %>
   </p>
   <p>
+    <% projects = Project.where('status=?', 1).map {|p| [p.name, p.id]} %>
+    <%= setting_label(:project_name) %>
+    <%= select_tag('settings[projects]',
+                   options_for_select(projects, @settings['projects']), multiple: true) %>
+  </p>
+  <p>
     <% statuses = IssueStatus.where('is_closed=?', false).map {|s| [s.name, s.id]} %>
     <%= setting_label(:issues_status_from) %>
     <%= select_tag('settings[issues_status_from]',
