@@ -13,9 +13,16 @@ $ cd plugins && mkdir issuecloser && cd ..
 ```
 
 Copy plugin files to folder /plugins/issuecloser
+
+Redmine v.4 & Rails 5.2
 ```ruby
-git clone https://github.com/isheninp/redmine_issue_closer.git plugins/issuecloser
+git clone --branch redmine-4 https://github.com/isheninp/redmine_issue_closer.git plugins/issuecloser
 ```
+Redmine v.3 & Rails 4
+```ruby
+git clone --branch redmine-3 https://github.com/isheninp/redmine_issue_closer.git plugins/issuecloser
+```
+
 Do not change folder path!
 
 Go to app folder and run:
