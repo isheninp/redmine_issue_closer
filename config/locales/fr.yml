@@ -1,0 +1,33 @@
+fr:
+  label_issue_closer: Fermeture automatique des demandes
+  setting_auto_close: Automatiser les changements de statut
+  setting_issues_status_from: Statut de départ
+  setting_issues_status_to: Statut d'arrivée
+  setting_auto_close_after_days: Délai avant changement de statut (en jours)
+  settings_manual_change: Voir les demandes à clôturer
+  make_new_status: Modifier le statut
+  action: Action
+  status_from: Statut actuel
+  status_to: Futur statut
+  issues_count: Nombre de demandes
+  issues_to_be_changed: Demandes à modifier
+  notice_issue_status_updated: La demande a été mise à jour
+  setting_closing_note: Note ajoutée à la demande lors du changement de statut
+  update_settings: Modifier les paramètres du plugin
+  setting_update_author: Auteur des modifications automatiques
+  helpers:
+    page_entries_info:
+      more_pages:
+        display_entries: "%{entry_name} <b>%{first}</b> à <b>%{last}</b> affiché(e)s sur <b>%{total}</b> au total"
+      one_page:
+        display_entries:
+          zero: "Aucun(e) %{entry_name} trouvé(e)s"
+          one: "Affichage de <b>1</b> %{entry_name}"
+          other: "Affichage des <b>%{count}</b> %{entry_name}"
+  views:
+    pagination:
+      first: "&laquo; Première"
+      last: "Dernière &raquo;"
+      previous: "&lsaquo; Précédente"
+      next: "Suivante &rsaquo;"
+      truncate: "&hellip;"

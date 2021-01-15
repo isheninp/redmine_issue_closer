@@ -1,5 +1,5 @@
 ru:
-  settings_h1: Управление статусами задач
+  label_issue_closer: Управление статусами задач
   setting_auto_close: Автоматическое закрытие задач
   setting_issues_status_from: Искать задачи со статусом
   setting_issues_status_to: Установить статус
@@ -7,9 +7,6 @@ ru:
   settings_manual_change: Поиск и ручное изменение статуса
   make_new_status: Сменить статус
   action: Действие
-  project: Проект
-  subject: Тема
-  issue_date: Дата
   status_from: Текущий статус
   status_to: Новый статус
   issues_count: Задач всего
@@ -20,6 +17,7 @@ ru:
         display_entries: Показана %{entry_name} <b>%{first}&nbsp;-&nbsp;%{last}</b> из <b>%{total}</b>
       one_page:
         display_entries:
+          zero: %{entry_name.capitalize} не найдено
           one: Показано <b>%{count}</b> %{entry_name}
           other: Показаны <b>все %{count}</b> %{entry_name}"
   views:

@@ -1,5 +1,5 @@
 en:
-  settings_h1: Issue management
+  label_issue_closer: Issue management
   setting_auto_close: Automatic issue closing
   setting_issues_status_from: Find status
   setting_issues_status_to: Set status to
@@ -7,10 +7,27 @@ en:
   settings_manual_change: Manually change
   make_new_status: Change status
   action: Action
-  project: Project
-  subject: Subject
-  issue_date: Date
   status_from: Current status
   status_to: New status
   issues_count: Issues total
   issues_to_be_changed: Issues to be changed
+  notice_issue_status_updated: The issue has been updated
+  setting_closing_note: Note added to the issue when the status is updated
+  update_settings: Update plugin settings
+  setting_update_author: Author of automatic updates
+  helpers:
+    page_entries_info:
+      more_pages:
+        display_entries: "Displaying %{entry_name} <b>%{first}&nbsp;-&nbsp;%{last}</b> of <b>%{total}</b> in total"
+      one_page:
+        display_entries:
+          zero: "No %{entry_name} found"
+          one: "Displaying <b>1</b> %{entry_name}"
+          other: "Displaying <b>all %{count}</b> %{entry_name}"
+  views:
+    pagination:
+      first: "&laquo; First"
+      last: "Last &raquo;"
+      previous: "&lsaquo; Prev"
+      next: "Next &rsaquo;"
+      truncate: "&hellip;"
