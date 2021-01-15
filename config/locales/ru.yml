@@ -12,7 +12,9 @@ ru:
   status_to: Новый статус
   issues_count: Задач всего
   issues_to_be_changed: Найдено задач для изменения
+  notice_issue_status_updated: Задача обновлена
   setting_closing_note: Пометка при удалении
+  update_settings: Обновить настройки
   setting_update_author: Автор изменений
   helpers:
     page_entries_info:
