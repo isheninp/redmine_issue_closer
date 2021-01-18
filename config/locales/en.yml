@@ -16,6 +16,8 @@ en:
   setting_closing_note: Note added to the issue when the status is updated
   update_settings: Update plugin settings
   setting_update_author: Author of automatic updates
+  setting_warning: Warning! You must have at least one status with 'closed' attribute!
+  setting_check_settings: Open setting
   helpers:
     page_entries_info:
       more_pages:

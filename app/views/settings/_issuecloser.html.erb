@@ -1,5 +1,14 @@
 <h3><%= t :label_issue_closer %></h3>
 <div class="tabular settings">
+  <% disable_plugin = true if IssueStatus.where(is_closed: true).count==0 %>
+  <% if disable_plugin %>
+  <h3 style="text-align: center; color: red;">
+    <%=t(:setting_warning) %>
+  </h3>
+  <p>
+    <%=link_to t(:setting_check_settings),'/issue_statuses'%>
+  </p>
+  <% else %>
   <p>
     <%= setting_label(:auto_close) %>
     <%= check_box_tag('settings[auto_close]', true, @settings['auto_close']) %>
@@ -38,4 +47,5 @@
   <p>
     <%= link_to t(:settings_manual_change), issuecloser_path %>
   </p>
+  <% end %>
 </div>

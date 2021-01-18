@@ -16,6 +16,8 @@ ru:
   setting_closing_note: Пометка при удалении
   update_settings: Обновить настройки
   setting_update_author: Автор изменений
+  setting_warning: Внимание! Необходимо иметь хотя бы один статус с атрибутом 'closed'!
+  setting_check_settings: Открыть настройки
   helpers:
     page_entries_info:
       more_pages:
