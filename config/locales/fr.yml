@@ -16,6 +16,8 @@ fr:
   setting_closing_note: Note ajoutée à la demande lors du changement de statut
   update_settings: Modifier les paramètres du plugin
   setting_update_author: Auteur des modifications automatiques
+  setting_warning: Warning! You must have at least one status with 'closed' attribute!
+  setting_check_settings: Open setting
   helpers:
     page_entries_info:
       more_pages:
